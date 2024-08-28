@@ -35,7 +35,7 @@
 7. In the previous step an a EC2 Instances is created, so login that server with SSH in the same terminal
    ---------------
    command:
-   _
+   __________
       ssh -i ~/.ssh/id_rsa ec2-user@<instance_ip>   #change the username and instance public ip
 
     ![Screenshot 2024-08-29 013701](https://github.com/user-attachments/assets/dc798879-8440-483c-9bf7-3b48b151067d)
@@ -43,13 +43,13 @@
 8. Now update the server install AWS-CLI in that server
    --------------------------------------------------
    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-   _
+   ______________
    unzip awscliv2.zip
-   _
+   _________
    sudo ./aws/install
-   _
+   ______________
    aws --version
-   _
+   ___________
 
 9. Then write a Shell Scripting File and Execute that File with this command
    -
@@ -62,9 +62,11 @@
 
 11. Logout the server with Exit command
     -
-    command:exit
+    command:
+    _______________________
+    exit
 
-13. Terminate the Instaces destroy command in terminal
+12. Terminate the Instaces destroy command in terminal
     -
     command:
      -
