@@ -10,7 +10,7 @@
 5. Write the terraform template script in the main.tf file and variable.tf
    ---
    Terraform/aws_resources_with_terraform/resources_main.tf
-   ______________--
+   ______________
    Terraform/aws_resources_with_terraform/resources_variable.tf
    ______________
    Terraform/aws_resources_with_terraform/resources_terraform.sh
