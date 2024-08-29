@@ -8,4 +8,4 @@ Automated Workflows: Leveraged Shell scripts to streamline the deployment proces
 
 No AWS Console Needed: Deployed and managed the entire infrastructure without accessing the AWS Console or using any external tools like MobaXterm.
 
-If you're interested in the details, feel free to check out the project on GitHub:
+If you're interested in the details, feel free to check out the project on GitHub:https://github.com/Shivasaiprasad4520/DevOps-Projects/tree/main/Terraform/aws_resources_with_terraform
