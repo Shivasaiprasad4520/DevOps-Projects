@@ -24,7 +24,8 @@ ___________
 
 Output:
 ----
-![image](https://github.com/user-attachments/assets/c6a8eb8d-6b37-4f8d-bbdb-e009bab24763)
+![image](https://github.com/user-attachments/assets/3bf480e4-8fbb-419a-9da7-b5b5d0619801)
+
 
 
 ![terraform Output](https://github.com/user-attachments/assets/156adb3d-6bd2-4591-a154-ea22f8af2278)
