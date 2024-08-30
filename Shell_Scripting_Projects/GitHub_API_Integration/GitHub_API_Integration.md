@@ -42,4 +42,5 @@
       ----------
      * `` ./example-project.sh shivasaiprasad4520 devops-project ``
 
-      ![image](https://github.com/user-attachments/assets/4f5225f0-b4be-4e2e-9e89-ffd1e12103dd)
+      ![image](https://github.com/user-attachments/assets/30da1a0c-2568-4bef-8be1-382fa1932433)
+
