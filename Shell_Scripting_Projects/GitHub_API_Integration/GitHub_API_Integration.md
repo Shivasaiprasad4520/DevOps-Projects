@@ -13,8 +13,7 @@
   2. Login to the server with keypair and Machin name in powershell interface or Mobaxterm i used powershell
      ----------
      `` ssh
-     ___
-     `` ssh -i shell-key.pem ubuntu@54.53.66.767
+      ssh -i shell-key.pem ubuntu@54.53.66.767 ``
     ___
   3. Install "jq" plugin
      ------------------
@@ -36,7 +35,7 @@
    6. Export your github authentication means username and token
       ---------
       `` export username="shivasaiprasad4520
-         -
+         
       `` export token="sfgysrbdzczdbghgkungvghj"
 
    8. Now execute this dot slash extension with file and github username and repo name like
