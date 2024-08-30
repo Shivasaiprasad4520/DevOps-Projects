@@ -14,8 +14,7 @@
      ----------
     ssh
     ssh -i shell-key.pem ubuntu@54.53.66.767
-   
-      ___________
+    ___
   3. Install "jq" plugin
      ------------------
      sudo apt-get install jq -y
