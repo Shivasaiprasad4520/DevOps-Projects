@@ -12,8 +12,8 @@
 
   2. Login to the server with keypair and Machin name in powershell interface or Mobaxterm i used powershell
      ----------
-     `` ssh
-      ssh -i shell-key.pem ubuntu@54.53.66.767 ``
+     `` ssh ``
+     ``ssh -i shell-key.pem ubuntu@54.53.66.767 ``
     ___
   3. Install "jq" plugin
      ------------------
