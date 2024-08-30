@@ -13,6 +13,7 @@
   2. Login to the server with keypair and Machin name in powershell interface or Mobaxterm i used powershell
      ----------
      `` ssh
+     ___
      `` ssh -i shell-key.pem ubuntu@54.53.66.767
     ___
   3. Install "jq" plugin
@@ -26,7 +27,7 @@
 
   4. write a shell script file like this
      -------
-     https://github.com/Shivasaiprasad4520/DevOps-Projects/blob/main/Shell_Scripting_Projects/GitHub_API_Integration/GitHub_API_Integration.sh
+     `` https://github.com/Shivasaiprasad4520/DevOps-Projects/blob/main/Shell_Scripting_Projects/GitHub_API_Integration/GitHub_API_Integration.sh
 
    5. Change permission to that file
       --
@@ -35,10 +36,11 @@
    6. Export your github authentication means username and token
       ---------
       `` export username="shivasaiprasad4520
+         -
       `` export token="sfgysrbdzczdbghgkungvghj"
 
-   7. Now execute this dot slash extension with file and github username and repo name like
+   8. Now execute this dot slash extension with file and github username and repo name like
       ----------
-      `` ./example-project.sh shivasaiprasad4520 devops-project
+        ``./example-project.sh shivasaiprasad4520 devops-project
 
       ![image](https://github.com/user-attachments/assets/4f5225f0-b4be-4e2e-9e89-ffd1e12103dd)
