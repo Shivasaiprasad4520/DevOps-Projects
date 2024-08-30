@@ -1,0 +1,1 @@
+# In this project we want to access or revoke permission and assigning permission or Monitoring the particular repository in GitHub in day to day bases for that i am write a shell-script to intergret the GitHub API Integration For Monitoring the Repo
