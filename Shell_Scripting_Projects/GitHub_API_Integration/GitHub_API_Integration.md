@@ -1,1 +1,3 @@
 # In this project we want to access or revoke permission and assigning permission or Monitoring the particular repository in GitHub in day to day bases for that i am write a shell-script to intergret the GitHub API For Monitoring the Repo
+* Listing people who have access to the repo if someone is not there in company but have access then we revoke
+* 
