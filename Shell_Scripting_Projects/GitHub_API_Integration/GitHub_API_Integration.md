@@ -26,7 +26,7 @@
 
   4. write a shell script file like this
      -------
-     * `` https://github.com/Shivasaiprasad4520/DevOps-Projects/blob/main/Shell_Scripting_Projects/GitHub_API_Integration/GitHub_API_Integration.sh ``
+      `` https://github.com/Shivasaiprasad4520/DevOps-Projects/blob/main/Shell_Scripting_Projects/GitHub_API_Integration/GitHub_API_Integration.sh ``
 
    5. Change permission to that file
       --
