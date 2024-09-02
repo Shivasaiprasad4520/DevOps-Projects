@@ -43,7 +43,7 @@
      * ``./example-project.sh shivasaiprasad4520 devops-project ``
        _________
 
-      ![Screenshot 2024-08-31 011806](https://github.com/user-attachments/assets/6f1b450b-bff9-46fb-8631-c69ac7b42ac6)
+       ![Screenshot 2024-08-31 011806](https://github.com/user-attachments/assets/6f1b450b-bff9-46fb-8631-c69ac7b42ac6)
 
 
 
