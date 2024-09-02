@@ -41,6 +41,8 @@
    8. Now execute this dot slash extension with file and github username and repo name like
       ----------
      * `` ./example-project.sh shivasaiprasad4520 devops-project ``
-    --
+       __________________
+
+
       ![image](https://github.com/user-attachments/assets/30da1a0c-2568-4bef-8be1-382fa1932433)
 
