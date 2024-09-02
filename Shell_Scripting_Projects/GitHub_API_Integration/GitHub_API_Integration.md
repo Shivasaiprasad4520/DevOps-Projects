@@ -40,9 +40,10 @@
 
    8. Now execute this dot slash extension with file and github username and repo name like
       ----------
-     * `` ./example-project.sh shivasaiprasad4520 devops-project ``
+     * ``./example-project.sh shivasaiprasad4520 devops-project ``
        _________
 
-      ![Screenshot 2024-08-31 011806](https://github.com/user-attachments/assets/91870c19-7910-4c20-acd2-61b482495b9d)
+      ![Screenshot 2024-08-31 011806](https://github.com/user-attachments/assets/6f1b450b-bff9-46fb-8631-c69ac7b42ac6)
+
 
 
