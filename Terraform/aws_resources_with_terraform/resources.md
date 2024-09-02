@@ -9,19 +9,19 @@
    -
 5. Write the terraform template script in the main.tf file and variable.tf
    ---
-   Terraform/aws_resources_with_terraform/resources_main.tf
+   `` Terraform/aws_resources_with_terraform/resources_main.tf ``
    ______________
-   Terraform/aws_resources_with_terraform/resources_variable.tf
+   `` Terraform/aws_resources_with_terraform/resources_variable.tf ``
    ______________
-   Terraform/aws_resources_with_terraform/resources_terraform.sh
+   `` Terraform/aws_resources_with_terraform/resources_terraform.sh ``
    _____________________
 6. Then Runned this following commands in Terminal
    -----------
-   terraform init
+   `` terraform init ``
     _
-   terraform plan
+   `` terraform plan ``
     _
-   terraform apply
+   `` terraform apply ``
     _
 
    ![Screenshot 2024-08-29 002248](https://github.com/user-attachments/assets/01ba3e21-4040-4890-bcca-3fc06c93103a)
@@ -36,24 +36,24 @@
    ---------------
    command:
    __________
-      ssh -i ~/.ssh/id_rsa ec2-user@<instance_ip>   #change the username and instance public ip
+      ``ssh -i ~/.ssh/id_rsa ec2-user@<instance_ip>``   #change the username and instance public ip
 
     ![Screenshot 2024-08-29 013701](https://github.com/user-attachments/assets/dc798879-8440-483c-9bf7-3b48b151067d)
 
 8. Now update the server install AWS-CLI in that server
    --------------------------------------------------
-   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   ``curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"``
    ______________
-   unzip awscliv2.zip
+   ``unzip awscliv2.zip``
    _________
-   sudo ./aws/install
+   ``sudo ./aws/install``
    ______________
-   aws --version
+   ``aws --version``
    ___________
 
 9. Then write a Shell Scripting File and Execute that File with this command
    -
-  ./filename.sh us-west-1 ec2
+  ``./filename.sh us-west-1 ec2``
    __
    
 10. See the Output 
@@ -64,12 +64,12 @@
     -
     command:
     _______________________
-    exit
+    ``exit``
 
 12. Terminate the Instaces destroy command in terminal
     -
     command:
      -
-    terraform destroy
+    ``terraform destroy``
     
     ![Screenshot 2024-08-29 022215](https://github.com/user-attachments/assets/0c38b24d-265d-40ef-b16e-b3fa8b35b289)
