@@ -3,16 +3,29 @@
   _______
   Steps:
   ====
-  1. Create a EC2 Instances With Terraform using VS-Code 
+  1. Configure AWS with access key and secret key then Create a EC2 Instances With Terraform using VS-Code 
      -------
-      
+      write the template for instances ``main.tf`` and ``variable.tf``
+     ____________________________
+     ``https://github.com/Shivasaiprasad4520/DevOps-Projects/blob/main/Terraform/github_api_integration_terraform/main.tf``
+     ___
+     ``https://github.com/Shivasaiprasad4520/DevOps-Projects/blob/main/Terraform/github_api_integration_terraform/variable.tf``
+     ___
+     execute this cammands in terminal:
+     ________
+     ``terraform init``
+     ``terraform plan``
+     ``terraform apply``
+     ________
+     
      ![image](https://github.com/user-attachments/assets/43678973-be04-467b-a6ae-acbfe4bc2047)
  
 
 
-  2. Login to the server with keypair and Machin name in powershell interface , Mobaxterm or VS-Code i used VS-Code Terminals
+  3. Login to the server with keypair and Machin name in powershell interface , Mobaxterm or VS-Code i used VS-Code Terminals
      ----------
-     Change the working present directory to keypair presented directory
+     Change the working present directory to keypair presented directory For accessing server in VS-Code Terminal then Follow the steps
+     _____________________
     * `` ssh ``
     * ``ssh -i shell-key.pem ubuntu@54.53.66.767 ``
     ___
