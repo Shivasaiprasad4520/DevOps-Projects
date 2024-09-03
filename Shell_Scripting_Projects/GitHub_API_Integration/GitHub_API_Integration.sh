@@ -1,22 +1,19 @@
 #!/bin/bash
 
 #########################
-# About:
-# Input:
-#
-# Owner:
+# About: Script to list users with read access to a GitHub repository
+# Input: Repository owner and repository name
+# Owner: Your Name
 #########################
-
-helper()
 
 # GitHub API URL
 API_URL="https://api.github.com"
 
-# GitHub username and personal access token
+# GitHub username and personal access token, expected to be set as environment variables
 USERNAME=$username
 TOKEN=$token
 
-# User and Repository information
+# User and Repository information from command-line arguments
 REPO_OWNER=$1
 REPO_NAME=$2
 
@@ -45,13 +42,20 @@ function list_users_with_read_access {
     fi
 }
 
-funtion helper {
-  expected_cmd_args=2
-  if [ $# -ne $expected_cmd_args]; then
-   echo "please execute the script with required cmd args"
+# Helper function to check if the correct number of arguments is provided
+function helper {
+    local expected_cmd_args=2
+    if [ $# -ne $expected_cmd_args ]; then
+        echo "Please execute the script with the required command arguments: <REPO_OWNER> <REPO_NAME>"
+        exit 1
+    fi
 }
 
-# Main script
+# Main script execution
+
+# Check for correct number of arguments
+helper $@
 
 echo "Listing users with read access to ${REPO_OWNER}/${REPO_NAME}..."
 list_users_with_read_access
+
