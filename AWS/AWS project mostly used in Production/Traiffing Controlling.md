@@ -17,11 +17,18 @@ _________________________________
 
 creating VPC
 --------
+___________________________
 creating Auto scaling and lunching two instances
 ------------------
+![image](https://github.com/user-attachments/assets/aaf42388-18d7-49ee-880c-7fdf09db8589)
+before going application load balancer install the application in this private server
+_______________________________
 then lunching baston Instance
 ------------
+________________________________
 Creating target Group
 -------------
+____________________
 creating load balancer
 -----------------
+____________________
