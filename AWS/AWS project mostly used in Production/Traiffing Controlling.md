@@ -17,7 +17,8 @@ _________________________________
 
 creating VPC
 --------
-In AWS Console search VPC and click on create VPC
+``In AWS Console search VPC and click on create VPC``
+
 ![Screenshot 2024-12-28 224758](https://github.com/user-attachments/assets/159b1c4c-12e4-473b-ad74-208c5f6e9113)
 
 ![Screenshot 2024-12-28 224907](https://github.com/user-attachments/assets/807148bc-6d55-4714-ab8c-99c887b245ff)
