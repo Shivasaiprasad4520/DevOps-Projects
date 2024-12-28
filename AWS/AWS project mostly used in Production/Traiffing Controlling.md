@@ -32,9 +32,36 @@ creating VPC
 ___________________________
 creating Auto scaling and lunching two instances
 ------------------
+``In AWS Console search Auto-scaling and click on create Auto Scaling``
+``in that create a template to Auto-scaling group``
+
+![Screenshot 2024-12-28 230315](https://github.com/user-attachments/assets/46fb386e-c231-4774-935f-9374fbc96faf)
+
+![Screenshot 2024-12-28 230346](https://github.com/user-attachments/assets/0d3b6290-bb21-4280-ac50-cab493dbd341)
+
+![Screenshot 2024-12-28 230414](https://github.com/user-attachments/assets/2aa7877a-b3f7-4528-bd43-b8093de74787)
+
+![Screenshot 2024-12-28 230448](https://github.com/user-attachments/assets/df17831e-c184-4811-aafc-c7232f054dcd)
+
+![Screenshot 2024-12-28 230514](https://github.com/user-attachments/assets/f4980fb0-f84f-45e6-88a4-f1c86c4743c3)
+
+![Screenshot 2024-12-28 230544](https://github.com/user-attachments/assets/57a9d298-9999-41ee-b253-463b27792806)
+``then lunch the auto-scaling group template``
+___________
+``After that create the auto-scaling group``
+
+![Screenshot 2024-12-28 231025](https://github.com/user-attachments/assets/03bf5bce-8148-4029-aad3-882e109a7d29)
+
+![Screenshot 2024-12-28 231257](https://github.com/user-attachments/assets/2163cc49-6a6a-4e54-91e5-f9757cd337af)
+
+![Screenshot 2024-12-28 231421](https://github.com/user-attachments/assets/ff1a369f-93bb-48b5-917b-26052b8fee67)
+
+![Screenshot 2024-12-28 232636](https://github.com/user-attachments/assets/22ee8e09-3720-4cb7-8223-02e339313e49)
+
 
 ![image](https://github.com/user-attachments/assets/aaf42388-18d7-49ee-880c-7fdf09db8589)
-before going application load balancer install the application in this private server
+
+``before going application load balancer install the application in this private server``
 _______________________________
 then lunching baston Instance
 ------------
