@@ -114,4 +114,81 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 now install plugins
 __
 ==>manage jenkins =>plugins => Available plugins ==> Docker Pipeline and sonar qube scanner
+## step7;=:- now install Sonarqube in ec2 server for that follow this
+execute this line by line 
+```
+System Requirements
+Java 17+ (Oracle JDK, OpenJDK, or AdoptOpenJDK)
+Hardware Recommendations:
+   Minimum 2 GB RAM
+   2 CPU cores
+sudo apt update && sudo apt install unzip -y
+adduser sonarqube
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4.1.88267.zip
+unzip *
+chown -R sonarqube:sonarqube /opt/sonarqube
+chmod -R 775 /opt/sonarqube
+cd /opt/sonarqube/bin/linux-x86-64
+./sonar.sh start
+```
+after executing this commands now iwant access this sonar with ip address of ec2 and port no 9000 in broswer 
+then enter username and password with "admin" then update password
+now create secret token in sonar qube then go to manage jenkins ->credentials -> system ->global credentials then save secret token in it
+## step8:- now install docker in your ec2 instance
+## Docker Slave Configuration
 
+Run the below command to Install Docker
+
+```
+sudo apt update
+sudo apt install docker.io
+```
+ 
+### Grant Jenkins user and Ubuntu user permission to docker deamon.
+
+```
+sudo su - 
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker
+```
+
+Once you are done with the above steps, it is better to restart Jenkins.
+
+```
+http://<ec2-instance-public-ip>:8080/restart
+```
+
+The docker agent configuration is now successful.
+## step9:- in this install kubernectes on your ec2 or system as your wish i perfered minikube
+start it this command
+```
+minikube start
+
+```
+after start of minikube then search operator.io in that select argo cd and install with cmd they provided
+try this cmd
+```
+kubectl get pod -n operators
+```
+### now store the docker hub password and github token in jenkins credential
+click on build now in jenkins to run the job
+check all are running or not if any error is occure debug it
+---------------------------------
+## step10:- to create a new Argo CD cluster with manifest file
+go through with Argo CD operator document in that go to user then go to basics use or copy the cluster file 
+now create a controller for that 
+```
+vim argocd-basic.yml
+kubectl apply -f argocd-basic.yml
+kubectl get pods
+kubectl get svc
+kubectl edit svc example argo-cd server
+  ==> type: NodePort # just change clusterip to nodeport
+minikube service argocd-server
+minikube service list
+```
+copy that port enrouted paste in browser your argo cd run the username will be admin
+to get password run this cmd ``` kubectl get secret ``` then ```kubectl edit secret <cluster>``` you opened a file then copy a password 
+get out from that cluster file and ``` echo <password> | base64 -d``` get a password login with it argo cd
+create application ==> give basic information and url and path project and cluter url:https://kubernetes.default.svc and namespace:default -->create
