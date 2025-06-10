@@ -109,7 +109,9 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png"> 
    
 ## step6:- After installing jenkins now i want creating pipeline 
+
 "=>ultimate-cicd =>configure => general -> pipeline =>pipeline script from SCM ->SCM:git ->repo url: github repo link => Branches to build:*/main => script path: repo path (cicd project/spring-bot/jenkinsfile) = save"
 now install plugins
+__
 ==>manage jenkins =>plugins => Available plugins ==> Docker Pipeline and sonar qube scanner
 
