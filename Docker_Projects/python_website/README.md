@@ -61,10 +61,13 @@ __
 $ Now build a dockerfile into Image
 __
 ```
+```
 docker build -t shivasai4520/website:v2 .
 docker run -p 8000:8000 shivasai4520/website:v2
 ```
+___
 $ Now push that image to docker hub
+___
 ```
 docker push shivasai4520/website:v2
 ```
