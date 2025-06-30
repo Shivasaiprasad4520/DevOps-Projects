@@ -46,6 +46,7 @@ __
 $ then go to cli migrate app
 __
 ```cmd: python manage.py migrate```
+```
 __
 ---------------------------------------------------------
 $ login into the Virtual Machin or use your machin
@@ -60,7 +61,6 @@ $ create requirements.txt file
 __
 $ Now build a dockerfile into Image
 __
-```
 ```
 docker build -t shivasai4520/website:v2 .
 docker run -p 8000:8000 shivasai4520/website:v2
