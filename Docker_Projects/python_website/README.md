@@ -1,9 +1,9 @@
-create Django project docker:
---
+# create Django project docker:
+
 ___
-$ create a folder move inside to it
-__-
-$ then create a virtual environment and activate it
+# create a folder move inside to it
+__
+# then create a virtual environment and activate it
 ___
 
 ```cmd: python -m venv practices_project
@@ -75,3 +75,5 @@ ___
 ```
 docker push shivasai4520/website:v2
 ```
+![image](https://github.com/user-attachments/assets/9a4ebd0a-fa99-4125-8efc-f8746ef6b874)
+
