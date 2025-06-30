@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -37,7 +40,8 @@
 		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
         <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+		<img src="{% static 'assets/img/logo.png' %}">
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
