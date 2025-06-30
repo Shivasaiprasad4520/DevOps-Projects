@@ -47,6 +47,8 @@ $ then go to cli migrate app
 __
 ```cmd: python manage.py migrate```
 ```
+![image](https://github.com/user-attachments/assets/85d7dc3c-e753-45b5-8dd3-26df4781017b)
+
 __
 ---------------------------------------------------------
 $ login into the Virtual Machin or use your machin
