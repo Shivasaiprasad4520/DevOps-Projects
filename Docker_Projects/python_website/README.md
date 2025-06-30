@@ -1,9 +1,11 @@
 create Django project docker:
 --
+___
 $ create a folder move inside to it
-__
+__-
 $ then create a virtual environment and activate it
 ___
+
 ```cmd: python -m venv practices_project
 cmd: practices_project\Scripts\activate```
 __
