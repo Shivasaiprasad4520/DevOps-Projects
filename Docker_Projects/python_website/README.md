@@ -105,8 +105,9 @@ docker build -t shivasai4520/website:final .
 ```
 docker run -p 8000:8000 shivasai4520/website:final
 Open http://localhost:8000/demo123/ ``` in your browser to see your app running inside Docker!
-![image](https://github.com/user-attachments/assets/85d7dc3c-e753-45b5-8dd3-26df4781017b)
 ```
+![image](https://github.com/user-attachments/assets/85d7dc3c-e753-45b5-8dd3-26df4781017b)
+
 ### ☁️ Push Docker Image to Docker Hub
 #### 📤 13. Push to Your Docker Hub Repository
 ```
