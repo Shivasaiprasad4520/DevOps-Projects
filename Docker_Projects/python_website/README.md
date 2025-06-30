@@ -40,11 +40,11 @@ INSTALLED_APPS = [
     'docker_project_app',
 ]```
 
-
+```
 ### 🧪 Test the App Locally
 #### 🧾 6. Create a Simple View
 In docker_project_app/views.py:
-```
+
 from django.http import HttpResponse
 
 def demo(request):
@@ -59,9 +59,10 @@ from docker_project_app.views import demo
 urlpatterns = [
     path('demo123/', demo),
 ]```
+```
 
 ### 🔄 8. Apply Migrations and Run Server
-```
+
 python manage.py migrate
 python manage.py runserver
 Visit http://localhost:8000/demo123/ in your browser.
@@ -71,14 +72,14 @@ Visit http://localhost:8000/demo123/ in your browser.
 ```
  Install Docker on your system from https://www.docker.com
 ```
-
+```
 ### 📄 10. Create Dockerfile and requirements.txt
 requirements.txt:
 ```
 Django
 gunicorn
 ```
-Dockerfile:
+#### Dockerfile:
 ```
 FROM python:3.10-slim
 
@@ -105,7 +106,7 @@ docker build -t shivasai4520/website:final .
 docker run -p 8000:8000 shivasai4520/website:final
 Open http://localhost:8000/demo123/ ``` in your browser to see your app running inside Docker!
 ![image](https://github.com/user-attachments/assets/85d7dc3c-e753-45b5-8dd3-26df4781017b)
-
+```
 ### ☁️ Push Docker Image to Docker Hub
 #### 📤 13. Push to Your Docker Hub Repository
 ```
