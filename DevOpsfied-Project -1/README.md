@@ -15,27 +15,36 @@ In the deploy stage, you can use **rules** to control when the pipeline runs. Fo
 ## Setting Up a CronJob
 
 A CronJob is a time-based scheduler that runs tasks at specified intervals. To set up a pipeline schedule in GitLab:
+  ![image-1](https://github.com/user-attachments/assets/ed273fec-678a-4dfc-85bb-d7fe7a47fd62)
 
 1. Click **Build** on the left sidebar.
+   ![image-2](https://github.com/user-attachments/assets/25fe386f-3e13-4b70-94f0-2cf4b5140096)
 2. Select **Pipeline Schedules**.
+   ![image-3](https://github.com/user-attachments/assets/3f503a46-50d2-4f6f-91e3-2402241d68d7)
 3. Click **New schedule**.
+   ![image-4](https://github.com/user-attachments/assets/2eb74922-0826-4960-99b4-ae86f294a1e6)
 4. Fill in the required fields:
     - Description
     - Cron timezone
     - Interval pattern (customized as needed)
     - Target branch or tag
 5. Click **Create pipeline schedule**.
-
+   ![image-6](https://github.com/user-attachments/assets/49fa7ccc-0b33-483e-a564-7b38dbebc9ae)
 Refer to the images in this document for visual guidance.
+ ![image-5](https://github.com/user-attachments/assets/99927b75-8e6a-4e58-9ab0-e9f8905484f4)
 
 ## Defining Variables in CI/CD
 
 If you need to declare variables (such as secrets or project-specific values) for your pipeline:
 
 1. Click **Settings** on the left sidebar.
+   ![image-7](https://github.com/user-attachments/assets/f623d6db-8ba2-4f2d-9472-70bca2f6f8c9)
 2. Go to **CI/CD** and expand the **Variables** section.
+   ![image-8](https://github.com/user-attachments/assets/50628e5b-ddc3-4961-8e82-e5c22d3f282f)
 3. Click **Add Variable**.
+    ![image-9](https://github.com/user-attachments/assets/fa6f5c35-6ab7-4ccc-ae96-e88cc7321a0c)
 4. Enter the key and value for your variable.
+   ![image-10](https://github.com/user-attachments/assets/b46ce34b-1a68-4e52-be8c-4627835218d5)
 
 These variables can be used in your pipeline configuration.
 
@@ -44,72 +53,16 @@ These variables can be used in your pipeline configuration.
 After scheduling your pipeline with a CronJob, you can manually trigger a dry run to ensure everything works as expected:
 
 1. Click **Build** on the left sidebar.
-2. Select **Pipeline Schedules**.
+   ![image-2](https://github.com/user-attachments/assets/9802ed55-cbfe-459b-8c83-228a3e853be2)
+
+2. Select **Pipeline Schedules**. 
+   ![image-3](https://github.com/user-attachments/assets/81071f91-9e2a-41ae-a7b9-1cdda73ed0b2)
+
 3. Click the **Run** button next to your scheduled pipeline.
+   ![image-11](https://github.com/user-attachments/assets/55e401dc-dccd-4d65-b5a4-ac95dff908d8)
 
 This allows you to verify your pipeline setup before relying on the scheduled runs.
 
-Why to use gitlab-cl file?
-It is used to automate the execution of task or File 
-In gitlab-CI.yaml file we are going to assignnig Test,Build,Deploy stages to make a pipeline to execute the file
-$ "Test stage" is to be used for security check in code or file or that could be application
-$ "Build stage" is to be used for executing the app or code 
-$ "Deploy stage" is to be used for relasing the application  or code  into the production environment, making it accessible to end-users.
-![alt text](image.png)
-
-`in this deploy stage we use "Rules" (rules are like condition). we use manual and schedule condition to automate the pipeline 
-`a human intervision need for manual pipeeline
-`it automatical run pipeline as per schedular time with the help of "CronJob"
-```
-
-### CronJob
-
-It's basically a time schedular to run a task at given particular time
-![alt text](image-1.png)
-after writing a CI File setup a cronjob
-
-setup:
-click "build" on left slidebar
-![build](image-2.png)
-then you got some option on those click only "pipeline schedular"
-![alt text](image-3.png)
-in the above image you seen a "New schedule" click on it
-![alt text](image-6.png)
-fill the block with reqriments
-1. Give the description
-2. Select the cron timezone 
-3. Select the Interval pattern as customized 
-4. Select target branch or tag
-5. Create pipeline schedular
-referrence image below
-![alt text](image-5.png)
-
-### Define Variable in CI-CD
-
-Is there any variable you want declare or assign to main file that could be secrets or any values related to project
-
-after cronjob setup a delaring variable to CI-CD
-click "setting" on left slidebar
-![alt text](image-7.png)
-click on "CI/CD" then after "Variable"
-![alt text](image-8.png)
-In "Variables" click on "Add Variable"
-![alt text](image-9.png)
-declare the "value" with "key"
-Use this as referrence
-![alt text](image-10.png)
-
-##After Declaring the Values and You Want Dry Run the Pipeline 
-
-As you know that you schedule the a pipeline with the particular time with cron job, so that the pipeline work on that time without human intervision
-
-For Dry Run: just try this
-click "build" on left slidebar
-![build](image-2.png)
-then you got some option on those click only "pipeline schedular"
-![alt text](image-3.png)
-click on "Run button" as show in below image
-![alt text](image-11.png)
 
 
 
