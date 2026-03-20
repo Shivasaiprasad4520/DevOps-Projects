@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  connection: local
+
+
+  tasks:
+  - name: Create EC2 instances
+    amazon.aws.ec2_instance:
+      name: "{{ item.name }}"
+      key_name: "Shiva_comput"
+      instance_type: t3.micro
+      security_group: default
+      region: eu-north-1
+      aws_access_key: "{{ ec2_access_key }}"  # From vault as defined
+      aws_secret_key: "{{ ec2_secret_key }}"
+      network:
+         assign_public_ip: true
+      image_id: "{{ item.image }}"
+
+    loop:
+      - { image: "ami-0aaa636894689fa47", name: "manage-node-1" } # Update AMI ID according 
+      - { image: "ami-0aaa636894689fa47", name: "manage-node-2" } # to your accoun
+      - { image: "ami-0974a2c5ddf10f442", name: "manage-node-3" }
