@@ -44,6 +44,10 @@ pool:
 
  <img width="1421" height="773" alt="image" src="https://github.com/user-attachments/assets/6ac6a6d3-6068-4334-a611-00fa37c9bb6f" />
  
+--
+ configure build and push stage different different go through /voting-app/result-build&push-dockerfile
+ 
+ 
 
  
  
