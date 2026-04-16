@@ -11,3 +11,17 @@ in brunch set a main brunch  as primary
 --
 <img width="1428" height="770" alt="image" src="https://github.com/user-attachments/assets/33d18f54-2ea5-4760-871d-cd7af5780aad" />
 
+__
+Create a resource group 
+--
+create a container registry using resources group
+
+<img width="836" height="714" alt="image" src="https://github.com/user-attachments/assets/5955105c-71df-4714-99b5-a30e01c54784" />
+
+--
+after creating registry go through pipeline 
+click on pipeline => create pipeline => azure repos => cicd => docker (Build and push an image to Azure Container Registry) click on it => contiue
+
+=> validate and configure
+
+<img width="1440" height="770" alt="image" src="https://github.com/user-attachments/assets/a2573b77-6aae-4164-8507-8c2311154d99" />
