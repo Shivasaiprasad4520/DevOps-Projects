@@ -1,4 +1,4 @@
-open the azure devops -> select repo => click on the import then paste the github link
+# open the azure devops -> select repo => click on the import then paste the github link
 __
 
 https://github.com/dockersamples/example-voting-app.git
@@ -25,3 +25,25 @@ click on pipeline => create pipeline => azure repos => cicd => docker (Build and
 => validate and configure
 
 <img width="1440" height="770" alt="image" src="https://github.com/user-attachments/assets/a2573b77-6aae-4164-8507-8c2311154d99" />
+
+add this in pipeline 
+``
+trigger:
+ paths:
+   include:
+     - result/*
+     ``
+remove existing agent and create a new agent to the pipeline
+
+``
+pool:
+ name: 'azureagent`
+ ``
+ create build and push stage different
+ click on settings adjust commands the task upon our requirements =>click on add button it automatically changes into your requirements
+
+ <img width="1421" height="773" alt="image" src="https://github.com/user-attachments/assets/6ac6a6d3-6068-4334-a611-00fa37c9bb6f" />
+ 
+
+ 
+ 
