@@ -1,4 +1,5 @@
 # "Jenkins End to End CICD Implementation"
+
 # Jenkins Pipeline for Java based application using Maven, SonarQube, Argo CD, Helm and Kubernetes
 
 ![Screenshot 2023-03-28 at 9 38 09 PM](https://user-images.githubusercontent.com/43399466/228301952-abc02ca2-9942-4a67-8293-f76647b6f9d8.png)
@@ -7,17 +8,22 @@
 ## Spring Boot based Java web application
  
 This is a simple Sprint Boot based Java application that can be built using Maven. Sprint Boot dependencies are handled using the pom.xml 
+
 at the root directory of the repository.
 
 This is a MVC architecture based application where controller returns a page with title and message attributes to the view.
 
 ## Step1:- Creating a EC2 instances with terroform using ubuntu OS image
+
    allow inbound rule to access
+   
 ## Step2:- Execute the application locally and access it using your browser 
+
 Checkout the repo and move to the directory
 
 ```
 git clone https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/java-maven-sonar-argocd-helm-k8s/sprint-boot-app
+
 cd java-maven-sonar-argocd-helm-k8s/sprint-boot-app
 ```
 
@@ -57,6 +63,7 @@ ssh -i /User/tarun/Downloads/ultimate-cicd.pem ubuntu@34.233.124.25
 ### step6:- install java and verify java version then install jenkins also 
 ```
 sudo apt update
+
 sude apt install openjdk-17-jre
 ```
 ```
@@ -68,15 +75,20 @@ curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
+
 sudo apt-get update
+
 sudo apt-get install jenkins
 ```
 
 **Note: ** By default, Jenkins will not be accessible to the external world due to the inbound traffic restriction by AWS. Open port 8080 in the inbound traffic rules as show below.
 
 - EC2 > Instances > Click on <Instance-ID>
+
 - In the bottom tabs -> Click on Security
+
 - Security groups
+
 - Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed `All traffic`).
 
 <img width="1187" alt="Screenshot 2023-02-01 at 12 42 01 PM" src="https://user-images.githubusercontent.com/43399466/215975712-2fc569cb-9d76-49b4-9345-d8b62187aa22.png">
@@ -164,23 +176,29 @@ http://<ec2-instance-public-ip>:8080/restart
 ```
 
 The docker agent configuration is now successful.
+
 ## step9:- in this install kubernectes on your ec2 or system as your wish i perfered minikube
+
 start it this command
 ```
 minikube start
 
 ```
-after start of minikube then search operator.io in that select argo cd and install with cmd they provided
-try this cmd
+after start of minikube then search operator.io in that select argo cd and install with cmd they provided try this cmd
 ```
 kubectl get pod -n operators
 ```
 ### now store the docker hub password and github token in jenkins credential
+
 click on build now in jenkins to run the job
+
 check all are running or not if any error is occure debug it
+
 ---------------------------------
 ## step10:- to create a new Argo CD cluster with manifest file
+
 go through with Argo CD operator document in that go to user then go to basics use or copy the cluster file 
+
 now create a controller for that 
 ```
 vim argocd-basic.yml
@@ -193,6 +211,9 @@ minikube service argocd-server
 minikube service list
 ```
 copy that port enrouted paste in browser your argo cd run the username will be admin
-to get password run this cmd ``` kubectl get secret ``` then ```kubectl edit secret <cluster>``` you opened a file then copy a password 
+
+to get password run this cmd ``` kubectl get secret ```
+then ```kubectl edit secret <cluster>``` 
+you opened a file then copy a password 
 get out from that cluster file and ``` echo <password> | base64 -d``` get a password login with it argo cd
 create application ==> give basic information and url and path project and cluter url:https://kubernetes.default.svc and namespace:default -->create
