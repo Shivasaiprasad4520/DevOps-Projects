@@ -216,4 +216,4 @@ to get password run this cmd ``` kubectl get secret ```
 then ```kubectl edit secret <cluster>``` 
 you opened a file then copy a password 
 get out from that cluster file and ``` echo <password> | base64 -d``` get a password login with it argo cd
-create application ==> give basic information and url and path project and cluter url:https://kubernetes.default.svc and namespace:default -->create
+create application ==> give basic information and url and path project and cluter url:https://kubernetes.default.svc and namespace:default --> create
