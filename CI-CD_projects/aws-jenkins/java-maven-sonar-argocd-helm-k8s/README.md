@@ -126,10 +126,10 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
    
 ## step6:- After installing jenkins now i want creating pipeline 
 
-"=>ultimate-cicd =>configure => general -> pipeline =>pipeline script from SCM ->SCM:git ->repo url: github repo link => Branches to build:*/main => script path: repo path (cicd project/spring-bot/jenkinsfile) = save"
+"=>ultimate-cicd => configure => general -> pipeline =>pipeline script from SCM ->SCM:git ->repo url: github repo link => Branches to build:*/main => script path: repo path (cicd project/spring-bot/jenkinsfile) = save"
 now install plugins
 __
-==>manage jenkins =>plugins => Available plugins ==> Docker Pipeline and sonar qube scanner
+==>manage jenkins => plugins => Available plugins ==> Docker Pipeline and sonar qube scanner
 ## step7;=:- now install Sonarqube in ec2 server for that follow this
 execute this line by line 
 ```
