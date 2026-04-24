@@ -156,6 +156,7 @@ then enter username and password with "admin" then update password
 now create secret token in sonar qube then go to manage jenkins ->credentials -> system ->global credentials then save secret token in it
 
 ## step8:- now install docker in your ec2 instance
+
 ## Docker Slave Configuration
 
 Run the below command to Install Docker
@@ -220,5 +221,7 @@ copy that port enrouted paste in browser your argo cd run the username will be a
 to get password run this cmd ``` kubectl get secret ```
 then ```kubectl edit secret <cluster>``` 
 you opened a file then copy a password 
+
 get out from that cluster file and ``` echo <password> | base64 -d``` get a password login with it argo cd
+
 create application ==> give basic information and url and path project and cluter url:https://kubernetes.default.svc and namespace:default --> create
