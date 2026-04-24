@@ -134,8 +134,11 @@ __
 execute this line by line 
 ```
 System Requirements
+
 Java 17+ (Oracle JDK, OpenJDK, or AdoptOpenJDK)
+
 Hardware Recommendations:
+
    Minimum 2 GB RAM
    2 CPU cores
 sudo apt update && sudo apt install unzip -y
