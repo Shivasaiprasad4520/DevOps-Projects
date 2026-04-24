@@ -152,7 +152,9 @@ cd /opt/sonarqube/bin/linux-x86-64
 ```
 after executing this commands now iwant access this sonar with ip address of ec2 and port no 9000 in broswer 
 then enter username and password with "admin" then update password
+
 now create secret token in sonar qube then go to manage jenkins ->credentials -> system ->global credentials then save secret token in it
+
 ## step8:- now install docker in your ec2 instance
 ## Docker Slave Configuration
 
